@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <html>
+        <head>
+            <title>{{ title }} - HealthCare Passport</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+        </head>
+        <body style="background-image:url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiT7cO1uafmAhVB-qwKHQn3B50QjRx6BAgBEAQ&url=https%3A%2F%2Fmedtechboston.medstro.com%2Fblog%2F2015%2F06%2F25%2Fwhy-not-profit-off-world-health%2F&psig=AOvVaw3K_MhhI7Qt_5jMHrOKo95p&ust=1575942451016748)">
+            <div class = "col-md-auto mt-4"> 
+                <form action = '' method="post" novalidate>
+                    {{ form.hidden_tag() }}
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <p> Tweet text </p>
+                                <p class = "border"> {{tweet.given_text}} </p>
+                            </div>
+                            <div class="col-5">
+                                <p> Selected Text </p>
+                                <p>{{ form.selected_text(size=35) }}</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id = "SentButtons">
+                            <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-5">
+                                            <p> {{form.primary_sent}} </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p> {{form.secondary_sent}} </p>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class = "text-center">
+                        {{ form.submit }}
+                    </div>
+                </form>
+                
+                <div id = "Paging">
+
+                </div>
+            </div>
+        </body>
+    </html>
+{% endblock %}

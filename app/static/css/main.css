@@ -1,0 +1,10 @@
+html,body{
+    height:100%;
+}
+div.lightGreyBackground{
+    background-color: white;
+    min-height: 100%;
+}
+div.darkGreenBackground{
+    background-color:green;
+}
