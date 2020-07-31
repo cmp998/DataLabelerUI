@@ -11,7 +11,7 @@ Instructions for starting:
 5. It should load directly into the first unlabelled tweet
 6. Use the buttons to select emotions
 7. Copy paste the selected text into the box (if you select neutral as the primary it will autofill with all of the given text)
-8. Each time complete a tweet it'll output into the live_results file in app/log.
+8. Each time you complete a tweet it'll output into the live_results file in app/log and load the next unlabelled tweet (until you've completed them and you'll get a 500 error and it's time to start at step 1 again).
     
 When I finish with a set I'll rename it to archive it.  I normally throw it into excel add the headers and the two columns that convert
 emtoion numbering into english text.
