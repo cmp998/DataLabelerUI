@@ -7,6 +7,6 @@ pip install flask_migrate
 pip install flask_bootstrap
 pip install flask_wtf
 echo "---------------------------------------------------------------"
-echo "Successfully installed all depedencies for Healthcare Passport."
-echo "Use flask run to start the database and the website."
+echo "Successfully installed all depedencies."
+echo "Use 'flask run' to start the application."
 echo "---------------------------------------------------------------"
