@@ -1,7 +1,7 @@
 #My add ons
 __pycache__/
-log/
-round*.csv
+log/*.log
+app/log/*.csv
 
 # Created by https://www.gitignore.io/api/macos,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=macos,visualstudiocode
